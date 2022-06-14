@@ -1,0 +1,29 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-drawer{
+    width: 260px;
+    background: #ededf2;
+}
+
+mat-drawer-container{
+    height: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+.container-fluid{
+    background-color: #f7f7fc;
+    display: flex;
+}
+.sidebar{
+    width: 30%;
+}
+.body{
+    width: 70%;
+}

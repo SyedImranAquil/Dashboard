@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <button id="dashboard" mat-icon-button (click)="toggleSidebar()">Dashboard</button>
+    <div class="toggler" (change)="toggleSidebar"></div>
+    
+    <div class="search">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+
+        <a href="" class="searchbtn">
+            <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+        </a>
+    </div>
+
+    <div class="user">
+        <ul>
+            <button mat-button [matMenuTriggerFor]="menu" class="user m-2 d-flex align-items-center">
+                <img src="../../assets/user.jpg" alt="User Image" height="50px" class="user-image mr-1 p-2"><p>Bianca Gibson</p>
+                <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon>exit_to_app</mat-icon>
+                    Logout
+                </button>
+            </mat-menu>
+        </ul>
+    </div>
+</div>
+<!-- 
+
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+        <button id="dashboard" mat-icon-button (click)="toggleSidebar()">Dashboard</button>
+        <div class="row mr-2 ml-auto">
+
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+
+            <span><ul>
+                <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+                    <img src="../../assets/user.jpg" alt="User Image" height="40px" class="user-image mr-1 p-2">Bianca Gibson
+                    <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>exit_to_app</mat-icon>
+                        Logout
+                    </button>
+                </mat-menu>
+            </ul></span>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar> -->

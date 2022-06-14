@@ -1,0 +1,33 @@
+.logo{
+    text-align: center;
+    padding: 2.6rem 1rem;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.container{
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #616161;
+    margin: 0px;
+}
+.home, .dashboard, .tasks, .projects, .projects, .customers, .schedule, .planner{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+}
+
+a:hover, .home:hover, .dashboard:hover, .tasks:hover, .projects:hover, .projects:hover, .customers:hover, .schedule:hover, .planner:hover{
+    transform: scale(1.2);
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: #6578d0;
+}
